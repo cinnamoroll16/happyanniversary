@@ -5,9 +5,9 @@ var lyrics = document.querySelector("#lyrics");
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
   { text: "Moon, a hole of light", time: 9 },
-  { text: "Through the big top tent up high", time: 10 },
-  { text: "Here before and after me", time: 14 },
-  { text: "Shinin' down on me", time: 18 },
+  { text: "Through the big top tent up high", time: 9 },
+  { text: "Here before and after me", time: 12 },
+  { text: "Shinin' down on me", time: 16 },
   { text: "Moon, tell me if I could", time: 23 },
   { text: "Send up my heart to you?", time: 26 },
   { text: "So, when I die, which I must do", time: 30 },
