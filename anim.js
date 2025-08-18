@@ -4,7 +4,7 @@ var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
-  { text: "Moon, a hole of light Through the big top tent up high", time: 16 },
+  { text: "Moon, a hole of light Through the big top tent up high", time: 9 },
   { text: "Here before and after me", time: 20 },
   { text: "Shinin' down on me", time: 24 },
   { text: "Moon, tell me if I could", time: 29 },
@@ -35,27 +35,25 @@ var lyricsData = [
 
 // Animar las letras
 function updateLyrics() {
-  var time = Math.floor(audio.currentTime);
+  var time = audio.currentTime; // use exact time
   var currentLine = lyricsData.find(
     (line) => time >= line.time && time < line.time + 6
   );
 
   if (currentLine) {
-    // Calcula la opacidad basada en el tiempo en la línea actual
-    var fadeInDuration = 0.1; // Duración del efecto de aparición en segundos
+    var fadeInDuration = 0.5;
     var opacity = Math.min(1, (time - currentLine.time) / fadeInDuration);
 
-    // Aplica el efecto de aparición
     lyrics.style.opacity = opacity;
     lyrics.innerHTML = currentLine.text;
   } else {
-    // Restablece la opacidad y el contenido si no hay una línea actual
     lyrics.style.opacity = 0;
     lyrics.innerHTML = "";
   }
 }
 
-setInterval(updateLyrics, 1000);
+setInterval(updateLyrics, 200); // check 5 times per second
+
 
 //funcion titulo
 // Función para ocultar el título después de 216 segundos
