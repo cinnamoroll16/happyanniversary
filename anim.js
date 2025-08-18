@@ -37,7 +37,7 @@ function updateLyrics() {
   );
 
   if (currentLine) {
-    var fadeInDuration = 0.5;
+    var fadeInDuration = 0.2;
     var opacity = Math.min(1, (time - currentLine.time) / fadeInDuration);
 
     lyrics.style.opacity = opacity;
@@ -48,7 +48,7 @@ function updateLyrics() {
   }
 }
 
-setInterval(updateLyrics, 200); // check 5 times per second
+setInterval(updateLyrics, 115); // check 5 times per second
 
 
 //funcion titulo
@@ -63,4 +63,4 @@ function ocultarTitulo() {
 }
 
 // Llama a la función después de 216 segundos (216,000 milisegundos)
-setTimeout(ocultarTitulo, 216000);
+setTimeout(ocultarTitulo, 200);
