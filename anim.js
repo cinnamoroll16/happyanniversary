@@ -32,12 +32,12 @@ var lyricsData = [
 function updateLyrics() {
   var time = audio.currentTime; // use exact time
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 6
+    (line) => time >= line.time && time < line.time + 4
   );
 
   if (currentLine) {
-    var fadeInDuration = 0.2;
-    var opacity = Math.min(1, (time - currentLine.time) / fadeInDuration);
+    var fadeInDuration = 0; // instant show
+    var opacity = fadeInDuration ? Math.min(1, (time - currentLine.time) / fadeInDuration) : 1;
 
     lyrics.style.opacity = opacity;
     lyrics.innerHTML = currentLine.text;
@@ -47,8 +47,7 @@ function updateLyrics() {
   }
 }
 
-setInterval(updateLyrics, 138); // check 5 times per second
-
+setInterval(updateLyrics, 100);
 
 //funcion titulo
 // Función para ocultar el título después de 216 segundos
