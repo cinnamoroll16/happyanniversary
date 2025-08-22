@@ -15,27 +15,62 @@
      
     </div>
     <h1 class="titulo">I love you so much lablab. Mwehehehehhe</h1>
-    <!-- Left Photo Polaroid -->
-    <figure class="polaroid-card polaroid-left">
-      <div class="polaroid-media">
-        <img src="your-photo.jpg" alt="Cute moment">
-        <div class="polaroid-overlay">
-          <div class="tag">Sunny Day ☀️</div>
+    <!-- LEFT SIDE (Photos) -->
+    <div class="polaroid-left">
+      <figure class="polaroid-card">
+        <div class="polaroid-media">
+          <img src="images/photo1.jpg" alt="Photo 1">
+          <div class="polaroid-overlay"><div class="tag">SM Jmall Date</div></div>
         </div>
-      </div>
-      <figcaption class="polaroid-caption">Anna • 2025</figcaption>
-    </figure>
+        <figcaption class="polaroid-caption">August • 2024</figcaption>
+      </figure>
 
-    <!-- Right Video Polaroid -->
-    <figure class="polaroid-card polaroid-right">
-      <div class="polaroid-media">
-        <video src="your-video.mp4" muted playsinline loop></video>
-        <div class="polaroid-overlay">
-          <div class="tag">Little Dance 🎞️</div>
-        </div>
+        <figure class="polaroid-card">
+          <div class="polaroid-media">
+            <img src="images/photo2.jpg" alt="Photo 2">
+            <div class="polaroid-overlay"><div class="tag">11th monthsary/advnce anniv natu</div></div>
+          </div>
+          <figcaption class="polaroid-caption">July • 2025</figcaption>
+        </figure>
+      
+        <figure class="polaroid-card">
+          <div class="polaroid-media">
+            <img src="images/photo3.jpg" alt="Photo 3">
+            <div class="polaroid-overlay"><div class="tag">First Official Date</div></div>
+          </div>
+          <figcaption class="polaroid-caption">August • 2024</figcaption>
+        </figure>
       </div>
-      <figcaption class="polaroid-caption">Asuna • Summer Vibes</figcaption>
-    </figure>
+
+      <!-- RIGHT SIDE (Videos) -->
+      <div class="polaroid-right">
+        <figure class="polaroid-card">
+          <div class="polaroid-media">
+            <video src="images/video1.mp4" muted playsinline loop></video>
+            <div class="polaroid-overlay"><div class="tag">jacket theory</div></div>
+          </div>
+          <figcaption class="polaroid-caption">Just polaroid</figcaption>
+        </figure>
+      
+        <figure class="polaroid-card">
+          <div class="polaroid-media">
+            <video src="images/video2.mp4" muted playsinline loop></video>
+            <div class="polaroid-overlay"><div class="tag">Us being silly</div></div>
+          </div>
+          <figcaption class="polaroid-caption">July • 2025</figcaption>
+        </figure>
+      
+        <figure class="polaroid-card">
+          <div class="polaroid-media">
+            <video src="images/video3.mp4" muted playsinline loop></video>
+            <div class="polaroid-overlay"><div class="tag">Us always playing here</div></div>
+          </div>
+          <figcaption class="polaroid-caption">Piano tiles x Mr.Hook</figcaption>
+        </figure>
+      </div>
+
+
+    
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
@@ -346,6 +381,20 @@
         </div>
       </div>
     </div>
+    <script>
+      function handlePolaroids() {
+        if (window.innerWidth <= 768) {
+          document.querySelectorAll('.polaroid-strip').forEach(el => el.style.display = 'none');
+        } else {
+          document.querySelectorAll('.polaroid-strip').forEach(el => el.style.display = 'flex');
+        }
+      }
+
+      // Run on load
+      handlePolaroids();
+      // Run on resize
+      window.addEventListener('resize', handlePolaroids);
+    </script>
     <script src="anim.js"></script>
     <script src="main.js"></script>
   </body>
