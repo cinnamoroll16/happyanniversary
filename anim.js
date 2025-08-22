@@ -8,25 +8,24 @@ var lyricsData = [
   { text: "Through the big top tent up high", time: 12 },
   { text: "Here before and after me", time: 16 },
   { text: "Shinin' down on me", time: 21 },
-  { text: "Moon, tell me if I could", time: 23 },
-  { text: "Send up my heart to you?", time: 26 },
-  { text: "So, when I die, which I must do", time: 30 },
-  { text: "Could it shine down here with you?", time: 34 },
-  { text: "'Cause my love is mine, all mine", time: 39 },
-  { text: "My love mine, mine, mine", time: 44 },
-  { text: "Nothing in the world belongs to me", time: 37 },
-  { text: "But my love, mine, all mine, all mine", time: 51 },
-  { text: "But my love, mine, all mine, all mine", time: 58 },
-  { text: "My baby here on Earth", time: 75 },
-  { text: "Showed me what my heart was worth", time: 79 },
-  { text: "So when it comes to be my turn", time: 84 },
-  { text: "Could you shine it down here for her?", time: 88 },
-  { text: "'Cause my love is mine, all mine", time: 91 },
-  { text: "I love my, my, mine", time: 96 },
-  { text: "Nothing in the world belongs to me", time: 99 },
-  { text: "But my love, mine, all mine", time: 104 },
-  { text: "Nothing in the world is mine for free", time: 108 },
-  { text: "But my love, mine, all mine, all mine", time: 12 },
+  { text: "Moon, tell me if I could", time: 25 },
+  { text: "Send up my heart to you?", time: 28 },
+  { text: "So, when I die, which I must do", time: 34 },
+  { text: "Could it shine down here with you?", time: 38 },
+  { text: "'Cause my love is mine, all mine", time: 42 },
+  { text: "I love mine, mine, mine", time: 46 },
+  { text: "Nothing in the world belongs to me", time: 51 },
+  { text: "But my love, mine, all mine, all mine", time: 55 },
+  { text: "My baby here on Earth", time: 79 },
+  { text: "Showed me what my heart was worth", time: 82 },
+  { text: "So when it comes to be my turn", time: 86 },
+  { text: "Could you shine it down here for her?", time: 90 },
+  { text: "'Cause my love is mine, all mine", time: 94 },
+  { text: "I love my, my, mine", time: 99 },
+  { text: "Nothing in the world belongs to me", time: 103 },
+  { text: "But my love, mine, all mine", time: 108 },
+  { text: "Nothing in the world is mine for free", time: 112 },
+  { text: "But my love, mine, all mine, all mine", time: 116 },
 ];
 
 // Animar las letras
@@ -48,7 +47,7 @@ function updateLyrics() {
   }
 }
 
-setInterval(updateLyrics, 115); // check 5 times per second
+setInterval(updateLyrics, 138); // check 5 times per second
 
 
 //funcion titulo
